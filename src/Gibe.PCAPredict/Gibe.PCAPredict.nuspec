@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Gibe.PCAPredict</id>
+		<version>$version$</version>
+		<authors>Gibe Digital Ltd</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+			A wrapper around PCA Predict Capture+
+		</description>
+		<dependencies>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\Release\Gibe.PCAPredict.dll" target="lib" />
+	</files>
+</package>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://services.postcodeanywhere.co.uk/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://services.postcodeanywhere.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://services.postcodeanywhere.co.uk/">
+      <s:element name="Capture_Interactive_Retrieve_v1_00">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field1Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field2Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field3Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field4Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field5Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field6Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field7Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field8Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field9Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field10Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field11Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field12Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field13Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field14Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field15Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field16Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field17Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field18Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field19Format" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Field20Format" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Capture_Interactive_Retrieve_v1_00_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Capture_Interactive_Retrieve_v1_00_Result" type="tns:Capture_Interactive_Retrieve_v1_00_ArrayOfResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Capture_Interactive_Retrieve_v1_00_ArrayOfResults">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Capture_Interactive_Retrieve_v1_00_Results" type="tns:Capture_Interactive_Retrieve_v1_00_Results" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Capture_Interactive_Retrieve_v1_00_Results">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DomesticId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LanguageAlternatives" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SubBuilding" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BuildingNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BuildingName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondaryStreet" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Street" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Block" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Neighbourhood" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="District" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Line1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Line2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Line3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Line4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Line5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdminAreaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdminAreaCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProvinceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProvinceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryIso2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryIso3" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryIsoNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SortingNumber1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SortingNumber2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POBoxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field7" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field8" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field9" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field10" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field11" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field12" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field13" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field14" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field15" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field16" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field17" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field18" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field19" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field20" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Capture_Interactive_Retrieve_v1_00_SoapIn">
+    <wsdl:part name="parameters" element="tns:Capture_Interactive_Retrieve_v1_00" />
+  </wsdl:message>
+  <wsdl:message name="Capture_Interactive_Retrieve_v1_00_SoapOut">
+    <wsdl:part name="parameters" element="tns:Capture_Interactive_Retrieve_v1_00_Response" />
+  </wsdl:message>
+  <wsdl:portType name="PostcodeAnywhere_Soap">
+    <wsdl:operation name="Capture_Interactive_Retrieve_v1_00">
+      <wsdl:input message="tns:Capture_Interactive_Retrieve_v1_00_SoapIn" />
+      <wsdl:output message="tns:Capture_Interactive_Retrieve_v1_00_SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PostcodeAnywhere_Soap" type="tns:PostcodeAnywhere_Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Capture_Interactive_Retrieve_v1_00">
+      <soap:operation soapAction="http://services.postcodeanywhere.co.uk/Capture_Interactive_Retrieve_v1_00" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PostcodeAnywhere">
+    <wsdl:port name="PostcodeAnywhere_Soap" binding="tns:PostcodeAnywhere_Soap">
+      <soap:address location="https://services.postcodeanywhere.co.uk/Capture/Interactive/Retrieve/v1.00/soapnew.ws" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
